@@ -1,4 +1,6 @@
 body {
+  margin: auto;
+  width: 50%;
   background-image: url("https://cdn.woorise.com/template/wp-content/uploads/sites/62/2017/10/trivia-quiz-template-background.png");
   background-position: center;
 }
