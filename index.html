@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Let Us Know a Little Bit About You!</h1>
+      <form>
+        <label for="fname"> First Name: </label>
+        <input type="text" name="fname" placeholder="First Name" required />
+        <br />
+        <br />
+        <label for="lname"> Last Name: </label>
+        <input type="text" name="lname" placeholder="Last Name" required />
+        <br />
+        <br />
+        <label for="fname"> Email: </label>
+        <input type="email" name="email" placeholder="Email" required />
+        <br />
+        <br />
+        <label for="phone"> Enter a phone number: </label>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        />
+        <br />
+        <br />
+        <label for="age"> What is your age : </label>
+        <input type="number" name="age" placeholder="Age" />
+        <br />
+        <br />
+        <label for="birthday">When is your Birthday? </label>
+        <input type="date" id="birthday" name="birthday" />
+        <br />
+        <br />
+        <label for="gender"> What is your gender : </label>
+        <input type="checkbox" id="gender" name="gender" value="Male" />
+        <label for="male"> Male</label>
+        <input type="checkbox" id="gender" name="gender" value="Female" />
+        <label for="female"> Female</label>
+        <input
+          type="checkbox"
+          id="gender"
+          name="gender"
+          value="Prefer not to Answer"
+        />
+        <label for="noanswer"> Prefer not to Answer</label>
+      </form>
+    </header>
+    <br />
+    <article>
+      <form>
+        <label for="sport"> What is your favorite sport?</label>
+        <select id="sport" name="sport">
+          <option value="basketball">Basketball</option>
+          <option value="football">Football</option>
+          <option value="soccer">Soccer</option>
+          <option value="baseball">Baseball</option>
+          <option value="tennis">Tennis</option>
+          <option value="volleyball">Volleyball</option>
+        </select>
+        <br />
+        <br />
+        <label for="favcolor"> What is your favorite color? </label>
+        <input type="color" id="favcolor" name="favcolor" />
+        <br />
+        <br />
+        <label for="pet">Do you have any pets? </label>
+        <input type="radio" name="yes" value="Yes" /> Yes
+        <input type="radio" name="no" value="No" /> No
+        <br />
+        <br />
+        <label for="luckynumber">
+          What is your lucky number (between 0 and 100)?
+        </label>
+        <input
+          type="range"
+          id="luckynumber"
+          name="luckynumber"
+          min="0"
+          max="100"
+        />
+      </form>
+    </article>
+    <br />
+    <br />
+    <footer>
+      <label for="socialsecurity">
+        Now one final question... What is your social security number?</label
+      >
+      <input type="password" />
+    </footer>
+  </body>
+</html>
